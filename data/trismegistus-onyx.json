@@ -10,5 +10,6 @@
   "magenta": "#987CDC",
   "cyan": "#AEE8F4",
   "white": "#C0CAF5",
-  "gray": "#A0A0A0"
+  "gray": "#A0A0A0",
+  "test": "pink"
 }

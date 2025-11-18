@@ -1,18 +1,22 @@
-// import { useState } from "react";
-import "../data/trismegistus-onyx.json";
+import { useEffect } from "react";
+import data from "../data/trismegistus-onyx.json";
 
 function App() {
-  // documentStyle.setProperty("--background-color:", settings.theme.textColor);
-  // documentStyle.setProperty("--text-color", settings.theme.textColor);
-  // documentStyle.setProperty("--black", settings.theme.black);
-  // documentStyle.setProperty("--red", settings.theme.red);
-  // documentStyle.setProperty("--green", settings.theme.green);
-  // documentStyle.setProperty("--yellow", settings.theme.yellow);
-  // documentStyle.setProperty("--blue", settings.theme.blue);
-  // documentStyle.setProperty("--magenta", settings.theme.magenta);
-  // documentStyle.setProperty("--cyan", settings.theme.cyan);
-  // documentStyle.setProperty("--white", settings.theme.white);
-  // documentStyle.setProperty("--gray", settings.theme.gray);
+  useEffect(() => {
+    root.style.setProperty("--background-color", data.backgroundColor);
+    root.style.setProperty("--text-color", data.textColor);
+    root.style.setProperty("--black", data.black);
+    root.style.setProperty("--red", data.red);
+    root.style.setProperty("--green", data.green);
+    root.style.setProperty("--yellow", data.yellow);
+    root.style.setProperty("--blue", data.blue);
+    root.style.setProperty("--magenta", data.magenta);
+    root.style.setProperty("--cyan", data.cyan);
+    root.style.setProperty("--white", data.white);
+    root.style.setProperty("--gray", data.gray);
+
+    root.style.setProperty("--test", data.test);
+  }, []);
 
   return (
     <main>
