@@ -1,0 +1,107 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Reset End */
+
+:root {
+    --ff: "Geist", sans-serif;
+    --h1: 700 1.5rem / 1.2em var(--ff);
+    --h2: 700 1.25rem / 1.2em var(--ff);
+    --h3: 700 1.125rem / 1.4em var(--ff);
+    --h4: 700 1rem / 1.6em var(--ff);
+    --p: 400 1rem / 1.6em var(--ff);
+    --small: 400 0.75rem / 1.8em var(--ff);
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --bg-dark: #000;
+    --bg: #101010;
+    --bg-light: #171717;
+    --bg-extra-light: #303030;
+
+    --black: "#313131";
+    --red: "#B85551";
+    --green: "#8F9A52";
+    --yellow: "#D8A658";
+    --blue: "#76B7D7";
+    --magenta: "#987CDC";
+    --cyan: "#AEE8F4";
+    --white: "#C0CAF5";
+    --gray: "#A0A0A0";
+
+    --gradient: linear-gradient(0deg, var(--bg) 57%, var(--bg-light));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-extra-light));
+    --text: oklch(0.96 0 20);
+    --text-muted: oklch(0.76 0 20);
+    --highlight: oklch(0.5 0.02 74);
+    --border: oklch(0.4 0.02 74);
+    --border-muted: oklch(0.3 0.02 74);
+    --border-card: solid 1px var(--border-muted);
+    --primary: oklch(0.76 0.1 74);
+    --secondary: oklch(0.76 0.1 254);
+    --shadow: 0px 2px 2px oklch(0 0 0 / 0.2), 0px 4px 4px oklch(0 0 0 / 0.1);
+}
