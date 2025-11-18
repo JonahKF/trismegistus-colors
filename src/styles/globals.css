@@ -78,25 +78,25 @@ h6 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --bg-dark: #000;
+    /*--bg-dark: #000;
     --bg: #101010;
     --bg-light: #171717;
-    --bg-extra-light: #303030;
+    --bg-extra-light: #303030;*/
 
-    --black: "#313131";
-    --red: "#B85551";
-    --green: "#8F9A52";
-    --yellow: "#D8A658";
-    --blue: "#76B7D7";
-    --magenta: "#987CDC";
-    --cyan: "#AEE8F4";
-    --white: "#C0CAF5";
-    --gray: "#A0A0A0";
+    --background-color: #101010;
+    --text-color: #ffffff;
+    --black: #313131;
+    --red: #b85551;
+    --green: #8f9a52;
+    --yellow: #d8a658;
+    --blue: #76b7d7;
+    --magenta: #987cdc;
+    --cyan: #aee8f4;
+    --white: #c0caf5;
+    --gray: #a0a0a0;
 
     --gradient: linear-gradient(0deg, var(--bg) 57%, var(--bg-light));
     --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-extra-light));
-    --text: oklch(0.96 0 20);
-    --text-muted: oklch(0.76 0 20);
     --highlight: oklch(0.5 0.02 74);
     --border: oklch(0.4 0.02 74);
     --border-muted: oklch(0.3 0.02 74);

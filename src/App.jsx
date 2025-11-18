@@ -14,11 +14,9 @@ function App() {
   // documentStyle.setProperty("--cyan", settings.theme.cyan);
 
   return (
-    <>
-      <div>
-        <span>WIP</span>
-      </div>
-    </>
+    <main>
+      <span>Test</span>
+    </main>
   );
 }
 
