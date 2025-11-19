@@ -1,7 +1,7 @@
 {
   "name": "Trismegistus-Onyx",
   "backgroundColor": "#101010",
-  "textColor": "#FFFFFF",
+  "textColor": "#FDFDFD",
   "black": "#313131",
   "red": "#B85551",
   "green": "#8F9A52",
@@ -10,6 +10,5 @@
   "magenta": "#987CDC",
   "cyan": "#AEE8F4",
   "white": "#C0CAF5",
-  "gray": "#A0A0A0",
-  "test": "pink"
+  "gray": "#A0A0A0"
 }

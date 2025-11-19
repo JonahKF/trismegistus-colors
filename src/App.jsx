@@ -3,6 +3,8 @@ import data from "../data/trismegistus-onyx.json";
 
 function App() {
   useEffect(() => {
+    const root = document.querySelector(":root");
+
     root.style.setProperty("--background-color", data.backgroundColor);
     root.style.setProperty("--text-color", data.textColor);
     root.style.setProperty("--black", data.black);
@@ -14,13 +16,17 @@ function App() {
     root.style.setProperty("--cyan", data.cyan);
     root.style.setProperty("--white", data.white);
     root.style.setProperty("--gray", data.gray);
-
-    root.style.setProperty("--test", data.test);
   }, []);
 
   return (
     <main>
-      <span>Test</span>
+      <h1>Trismegistus Color Palette</h1>
+
+      {/* Diagonal blocks as hr below header */}
+
+      {/* Mock terminal, IDE, etc. */}
+
+      {/* 'I' button that brings up explanation */}
     </main>
   );
 }
