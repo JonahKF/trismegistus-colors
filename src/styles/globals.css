@@ -111,10 +111,8 @@ h6 {
 body {
     height: 100vh;
     width: 100vw;
-
-    background-color: var(--background-color);
+    background-color: #101010;
     color: var(--text-color);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,17 +123,46 @@ body {
 main {
     height: 83vh;
     width: 83vw;
-
+    background-color: var(--background-color);
     padding-top: 2.2rem;
     border-radius: 1rem;
     border: 1px solid var(--outline);
-
     h1 {
         font: var(--h1);
     }
-
     h2 {
         font: var(--h2);
         color: var(--text-subdued);
+    }
+}
+
+.partition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 17px;
+    > .parallelogram {
+        width: 75px;
+        height: 25px;
+        transform: skew(-20deg);
+        &.red {
+            background-color: var(--red);
+        }
+        &.green {
+            background-color: var(--green);
+        }
+        &.yellow {
+            background-color: var(--yellow);
+        }
+        &.blue {
+            background-color: var(--blue);
+        }
+        &.magenta {
+            background-color: var(--magenta);
+        }
+        &.cyan {
+            background-color: var(--cyan);
+        }
     }
 }

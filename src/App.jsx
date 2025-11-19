@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import data from "../data/trismegistus-onyx.json";
+import Partition from "./components/Partition.jsx";
 
 function App() {
   useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
         <h1>Trismegistus</h1>
         <h2>A basic color palette for your terminal, IDE and more</h2>
 
-        {/* Diagonal blocks as hr below header */}
+        <Partition />
 
         {/* Mock terminal, IDE, etc. */}
       </main>
