@@ -6,6 +6,7 @@ function App() {
     const root = document.querySelector(":root");
 
     root.style.setProperty("--background-color", data.backgroundColor);
+    root.style.setProperty("--outline", data.outline);
     root.style.setProperty("--text-main", data.textMain);
     root.style.setProperty("--text-subdued", data.textSubdued);
     root.style.setProperty("--black", data.black);
