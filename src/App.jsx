@@ -6,7 +6,8 @@ function App() {
     const root = document.querySelector(":root");
 
     root.style.setProperty("--background-color", data.backgroundColor);
-    root.style.setProperty("--text-color", data.textColor);
+    root.style.setProperty("--text-main", data.textMain);
+    root.style.setProperty("--text-subdued", data.textSubdued);
     root.style.setProperty("--black", data.black);
     root.style.setProperty("--red", data.red);
     root.style.setProperty("--green", data.green);
@@ -19,15 +20,18 @@ function App() {
   }, []);
 
   return (
-    <main>
-      <h1>Trismegistus Color Palette</h1>
+    <>
+      <main>
+        <h1>Trismegistus</h1>
+        <h2>A basic color palette for your terminal, IDE and more</h2>
 
-      {/* Diagonal blocks as hr below header */}
+        {/* Diagonal blocks as hr below header */}
 
-      {/* Mock terminal, IDE, etc. */}
+        {/* Mock terminal, IDE, etc. */}
+      </main>
 
       {/* 'I' button that brings up explanation */}
-    </main>
+    </>
   );
 }
 
