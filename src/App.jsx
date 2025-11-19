@@ -28,8 +28,11 @@ function App() {
         <h2>A basic color palette for your terminal, IDE and more</h2>
 
         <Partition />
+        {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
 
-        {/* Mock terminal, IDE, etc. */}
+        {/* Mock terminal, IDE, etc., with arrows on side of screen to cycle */}
+
+        {/* Buttons to cycle between onyx, slate and papyrus */}
       </main>
 
       {/* 'I' button that brings up explanation */}

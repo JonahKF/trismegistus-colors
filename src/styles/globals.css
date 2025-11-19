@@ -65,10 +65,10 @@ h6 {
 
 :root {
     --ff: "Geist", sans-serif;
-    --h1: 700 2.5rem / 1.5em var(--ff);
-    --h2: 600 1.5rem / 1.4em var(--ff);
-    --h3: 600 1.125rem / 1.4em var(--ff);
-    --h4: 600 1rem / 1.6em var(--ff);
+    --h1: 700 3rem / 1.5em var(--ff);
+    --h2: 500 1.5rem / 1.4em var(--ff);
+    --h3: 500 1.25rem / 1.4em var(--ff);
+    --h4: 400 1.125rem / 1.6em var(--ff);
     --p: 400 1rem / 1.6em var(--ff);
     --small: 400 0.75rem / 1.8em var(--ff);
     line-height: 1.5;
@@ -111,7 +111,8 @@ h6 {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #101010;
+    /*background-color: #101010;*/
+    background-color: #000;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -141,11 +142,12 @@ main {
     flex-direction: row;
     justify-content: center;
     gap: 17px;
-    margin-top: 17px;
+    margin-top: 19px;
     > .parallelogram {
         width: 75px;
         height: 25px;
         transform: skew(-20deg);
+        transition: transform 300ms ease-in-out;
         &.red {
             background-color: var(--red);
         }
@@ -163,6 +165,10 @@ main {
         }
         &.cyan {
             background-color: var(--cyan);
+        }
+        &:hover {
+            transform: skew(-20deg) scale(110%);
+            transition: transform 300ms ease-in-out;
         }
     }
 }
