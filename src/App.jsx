@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+// import data from "../data/test.json";
 import data from "../data/trismegistus-onyx.json";
 import Partition from "./components/Partition.jsx";
 import Terminal from "./components/Terminal.jsx";

@@ -75,14 +75,14 @@ h6 {
 /* Reset End */
 
 :root {
-    --ff: "Geist", sans-serif;
+    --ff: "JetBrainsMono", sans-serif;
     --ff-serif:
         LibreBaskerville, Georgia, Cambria, ui-serif, Times New Roman, Times,
         serif;
     --h1: 700 3rem / 1.5em var(--ff);
     --h1-serif: 700 3rem / 1.5em var(--ff-serif);
-    --h2: 400 1.4rem / 1.4em var(--ff);
-    --h3: 400 1.25rem / 1.4em var(--ff);
+    --h2: 400 1.2rem / 1.4em var(--ff);
+    --h3: 400 1.15rem / 1.4em var(--ff);
     --h4: 400 1.125rem / 1.6em var(--ff);
     --p: 400 1rem / 1.6em var(--ff);
     --small: 400 0.75rem / 1.8em var(--ff);
@@ -195,68 +195,67 @@ main {
 }
 
 .terminal {
+    display: flex;
+    gap: 35px;
+
     background-color: inherit;
     aspect-ratio: 500 / 300;
     width: 60%;
-    max-width: 605px;
     height: auto;
     border-radius: 1rem;
     border: 1px solid var(--outline);
     padding: 1rem;
 
+    text-align: left;
+    font-family: "JetBrainsMono", "Menlo", "Consolas", "Monaco", monospace;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: clamp(0.75em, 0.8vw, 0.9em);
+
+    .green {
+        color: var(--green);
+        font-weight: bold;
+    }
+
+    .yellow {
+        color: var(--yellow);
+        font-weight: bold;
+    }
+
+    .red {
+        color: var(--red);
+        font-weight: bold;
+    }
+
+    .magenta {
+        color: var(--magenta);
+        font-weight: bold;
+    }
+
+    .blue {
+        color: var(--blue);
+        font-weight: bold;
+    }
+
+    .cyan {
+        color: var(--cyan);
+        font-weight: bold;
+    }
+
     > .ascii {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        font-family: "JetBrainsMono", "Menlo", "Consolas", "Monaco", monospace;
-        font-weight: 400;
 
         white-space: pre;
-
-        line-height: 1.2;
-        font-weight: bold;
-        font-size: 0.75em;
 
         > span {
             display: inline-block;
         }
+    }
 
-        span:nth-child(1),
-        span:nth-child(3),
-        span:nth-of-type(1),
-        span:nth-of-type(2),
-        span:nth-of-type(3),
-        span:nth-of-type(4) {
-            color: var(--green);
-        }
-
-        span:nth-of-type(5),
-        span:nth-of-type(6),
-        span:nth-of-type(7) {
-            color: var(--yellow);
-        }
-
-        span:nth-of-type(8),
-        span:nth-of-type(9),
-        span:nth-of-type(10) {
-            color: var(--red);
-        }
-
-        span:nth-of-type(11),
-        span:nth-of-type(12),
-        span:nth-of-type(13) {
-            color: var(--magenta);
-        }
-
-        span:nth-of-type(14),
-        span:nth-of-type(15) {
-            color: var(--blue);
-        }
-
-        span:nth-of-type(16),
-        span:nth-of-type(17) {
-            color: var(--cyan);
-        }
+    > .terminal-output {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -285,7 +284,26 @@ main {
         &.papyrus {
             background-color: #e6ddd3;
             border: 1px solid #4f524f;
-            color: #5e5e56;
+            color: #262626;
         }
     }
+}
+
+.test {
+    color: #3c3836;
+    color: #b85651;
+    color: #8f9a52;
+    color: #c18f41;
+    color: #68948a;
+    color: #ab6c7d;
+    color: #72966c;
+    color: #a89984;
+    color: #5a524c;
+    color: #b85651;
+    color: #a9b665;
+    color: #d8a657;
+    color: #87aca3;
+    color: #c8899a;
+    color: #89b482;
+    color: #ddc7a1;
 }

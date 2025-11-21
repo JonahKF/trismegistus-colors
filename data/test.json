@@ -1,18 +1,18 @@
 {
-  "name": "Trismegistus-Onyx",
+  "name": "test",
   "backgroundColor": "#101010",
   "outline": "#4C4C50",
   "textMain": "#FDFDFD",
   "textSubdued": "#9E9E9E",
 
   "black": "#313131",
-  "red": "#B85551",
-  "green": "#8F9A52",
-  "yellow": "#D8A658",
-  "blue": "#76B7D7",
-  "magenta": "#987CDC",
-  "cyan": "#AEE8F4",
-  "gray": "#A79A84",
+  "red": "#b85651",
+  "green": "#8f9a52",
+  "yellow": "#c18f41",
+  "blue": "#68948a",
+  "magenta": "#ab6c7d",
+  "cyan": "#72966c",
+  "gray": "#a89984",
 
   "lightBlack": "#5a524c",
   "lightRed": "#b85651",
@@ -21,5 +21,5 @@
   "lightBlue": "#87aca3",
   "lightMagenta": "#c8899a",
   "lightCyan": "#89b482",
-  "white": "#DDC7A1"
+  "white": "#C0CAF5"
 }

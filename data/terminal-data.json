@@ -1,0 +1,17 @@
+{
+  "header": {
+    "username": "user",
+    "hostname": "trismegistus"
+  },
+  "systemInfo": {
+    "OS": "macOS Tahoe 26 26.1 arm64",
+    "Host": "MacBook Pro (14-inch, 2024, Three Thunderbolt 4 ports)",
+    "Kernel": "Darwin 25.1.0",
+    "Uptime": "9 days, 1 hour, 34 mins",
+    "Packages": "133 (brew), 19 (brew-cask)",
+    "Shell": "zsh 5.9",
+    "CPU": "Apple M4 (10) @ 4.46 GHz",
+    "GPU": "Apple M4 (10) @ 1.58 GHz [Integrated]",
+    "Memory": "16.90 GiB / 32.00 GiB (53%)"
+  }
+}
