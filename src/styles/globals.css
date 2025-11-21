@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("../assets/fonts/JetBrainsMono[wght].ttf")
+        format("truetype-variations");
+
+    font-weight: 1 1000;
+
+    font-style: normal;
+    font-display: swap;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -65,9 +76,13 @@ h6 {
 
 :root {
     --ff: "Geist", sans-serif;
+    --ff-serif:
+        LibreBaskerville, Georgia, Cambria, ui-serif, Times New Roman, Times,
+        serif;
     --h1: 700 3rem / 1.5em var(--ff);
-    --h2: 500 1.5rem / 1.4em var(--ff);
-    --h3: 500 1.25rem / 1.4em var(--ff);
+    --h1-serif: 700 3rem / 1.5em var(--ff-serif);
+    --h2: 400 1.4rem / 1.4em var(--ff);
+    --h3: 400 1.25rem / 1.4em var(--ff);
     --h4: 400 1.125rem / 1.6em var(--ff);
     --p: 400 1rem / 1.6em var(--ff);
     --small: 400 0.75rem / 1.8em var(--ff);
@@ -83,6 +98,7 @@ h6 {
     --bg-light: #171717;
     --bg-extra-light: #303030;*/
 
+    /* Default colors, replaced by JSON */
     --background-color: #101010;
     --outline: #4c4c50;
     --text-color: #ffffff;
@@ -122,14 +138,19 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
     height: 83vh;
     width: 83vw;
     background-color: var(--background-color);
-    padding-top: 2.2rem;
+    /*padding: 2.2rem 0;*/
     border-radius: 1rem;
     border: 1px solid var(--outline);
     h1 {
-        font: var(--h1);
+        font: var(--h1-serif);
     }
     h2 {
         font: var(--h2);
@@ -169,6 +190,102 @@ main {
         &:hover {
             transform: skew(-20deg) scale(110%);
             transition: transform 300ms ease-in-out;
+        }
+    }
+}
+
+.terminal {
+    background-color: inherit;
+    aspect-ratio: 500 / 300;
+    width: 60%;
+    max-width: 605px;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid var(--outline);
+    padding: 1rem;
+
+    > .ascii {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-family: "JetBrainsMono", "Menlo", "Consolas", "Monaco", monospace;
+        font-weight: 400;
+
+        white-space: pre;
+
+        line-height: 1.2;
+        font-weight: bold;
+        font-size: 0.75em;
+
+        > span {
+            display: inline-block;
+        }
+
+        span:nth-child(1),
+        span:nth-child(3),
+        span:nth-of-type(1),
+        span:nth-of-type(2),
+        span:nth-of-type(3),
+        span:nth-of-type(4) {
+            color: var(--green);
+        }
+
+        span:nth-of-type(5),
+        span:nth-of-type(6),
+        span:nth-of-type(7) {
+            color: var(--yellow);
+        }
+
+        span:nth-of-type(8),
+        span:nth-of-type(9),
+        span:nth-of-type(10) {
+            color: var(--red);
+        }
+
+        span:nth-of-type(11),
+        span:nth-of-type(12),
+        span:nth-of-type(13) {
+            color: var(--magenta);
+        }
+
+        span:nth-of-type(14),
+        span:nth-of-type(15) {
+            color: var(--blue);
+        }
+
+        span:nth-of-type(16),
+        span:nth-of-type(17) {
+            color: var(--cyan);
+        }
+    }
+}
+
+.theme-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+
+    > button {
+        padding: 4px 50px 4px 50px;
+        border-radius: 1rem;
+        font-family: var(--ff);
+        font-size: 0.9em;
+        font-weight: 600;
+        cursor: pointer;
+        &.onyx {
+            background-color: #101010;
+            border: 1px solid #4c4c50;
+            color: #fdfdfd;
+        }
+        &.slate {
+            background-color: #16161a;
+            border: 1px solid #4c4c50;
+            color: #abb2bf;
+        }
+        &.papyrus {
+            background-color: #e6ddd3;
+            border: 1px solid #4f524f;
+            color: #5e5e56;
         }
     }
 }

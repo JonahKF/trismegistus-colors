@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import data from "../data/trismegistus-onyx.json";
 import Partition from "./components/Partition.jsx";
+import Terminal from "./components/Terminal.jsx";
 
 function App() {
   useEffect(() => {
@@ -24,15 +25,22 @@ function App() {
   return (
     <>
       <main>
-        <h1>Trismegistus</h1>
-        <h2>A basic color palette for your terminal, IDE and more</h2>
+        <div className="top-container">
+          <h1>Trismegistus</h1>
+          <h2>A basic color palette for your terminal, IDE and more</h2>
 
-        <Partition />
-        {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
+          <Partition />
+          {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
+        </div>
 
+        <Terminal />
         {/* Mock terminal, IDE, etc., with arrows on side of screen to cycle */}
 
-        {/* Buttons to cycle between onyx, slate and papyrus */}
+        <div className="theme-btn-container">
+          <button className="theme-btn onyx">Onyx</button>
+          <button className="theme-btn slate">Slate</button>
+          <button className="theme-btn papyrus">Papyrus</button>
+        </div>
       </main>
 
       {/* 'I' button that brings up explanation */}
