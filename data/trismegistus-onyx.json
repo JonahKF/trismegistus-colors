@@ -12,14 +12,14 @@
   "blue": "#76B7D7",
   "magenta": "#987CDC",
   "cyan": "#AEE8F4",
-  "gray": "#A79A84",
+  "gray": "#c6c6c6",
 
   "lightBlack": "#5a524c",
-  "lightRed": "#b85651",
+  "lightRed": "#bc6762",
   "lightGreen": "#a9b665",
-  "lightYellow": "#d8a657",
-  "lightBlue": "#87aca3",
-  "lightMagenta": "#c8899a",
-  "lightCyan": "#89b482",
-  "white": "#DDC7A1"
+  "lightYellow": "#deae63",
+  "lightBlue": "#8dcae8",
+  "lightMagenta": "#a88ee7",
+  "lightCyan": "#baedf7",
+  "white": "#fff"
 }

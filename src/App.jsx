@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-// import data from "../data/test.json";
+// import data from "../data/orpheus.json";
 import data from "../data/trismegistus-onyx.json";
 import Partition from "./components/Partition.jsx";
 import Terminal from "./components/Terminal.jsx";
@@ -12,6 +12,7 @@ function App() {
     root.style.setProperty("--outline", data.outline);
     root.style.setProperty("--text-main", data.textMain);
     root.style.setProperty("--text-subdued", data.textSubdued);
+
     root.style.setProperty("--black", data.black);
     root.style.setProperty("--red", data.red);
     root.style.setProperty("--green", data.green);
@@ -19,8 +20,16 @@ function App() {
     root.style.setProperty("--blue", data.blue);
     root.style.setProperty("--magenta", data.magenta);
     root.style.setProperty("--cyan", data.cyan);
-    root.style.setProperty("--white", data.white);
     root.style.setProperty("--gray", data.gray);
+
+    root.style.setProperty("--light-black", data.lightBlack);
+    root.style.setProperty("--light-red", data.lightRed);
+    root.style.setProperty("--light-green", data.lightGreen);
+    root.style.setProperty("--light-yellow", data.lightYellow);
+    root.style.setProperty("--light-blue", data.lightBlue);
+    root.style.setProperty("--light-magenta", data.lightMagenta);
+    root.style.setProperty("--light-cyan", data.lightCyan);
+    root.style.setProperty("--white", data.white);
   }, []);
 
   return (

@@ -143,10 +143,10 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2.2rem;
-    height: 83vh;
+    min-height: 83vh;
     width: 83vw;
     background-color: var(--background-color);
-    /*padding: 2.2rem 0;*/
+    padding: 2.2rem 0;
     border-radius: 1rem;
     border: 1px solid var(--outline);
     h1 {
@@ -256,6 +256,67 @@ main {
     > .terminal-output {
         display: flex;
         flex-direction: column;
+
+        > .output-colors {
+            > .color-row {
+                display: flex;
+                flex-direction: row;
+
+                > div {
+                    aspect-ratio: 28 / 20;
+                    height: 20px;
+                    &.black {
+                        background-color: var(--black);
+                    }
+                    &.red {
+                        background-color: var(--red);
+                    }
+                    &.green {
+                        background-color: var(--green);
+                    }
+                    &.yellow {
+                        background-color: var(--yellow);
+                    }
+                    &.blue {
+                        background-color: var(--blue);
+                    }
+                    &.magenta {
+                        background-color: var(--magenta);
+                    }
+                    &.cyan {
+                        background-color: var(--cyan);
+                    }
+                    &.gray {
+                        background-color: var(--gray);
+                    }
+
+                    &.light-black {
+                        background-color: var(--light-black);
+                    }
+                    &.light-red {
+                        background-color: var(--light-red);
+                    }
+                    &.light-green {
+                        background-color: var(--light-green);
+                    }
+                    &.light-yellow {
+                        background-color: var(--light-yellow);
+                    }
+                    &.light-blue {
+                        background-color: var(--light-blue);
+                    }
+                    &.light-magenta {
+                        background-color: var(--light-magenta);
+                    }
+                    &.light-cyan {
+                        background-color: var(--light-cyan);
+                    }
+                    &.white {
+                        background-color: var(--white);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -287,23 +348,4 @@ main {
             color: #262626;
         }
     }
-}
-
-.test {
-    color: #3c3836;
-    color: #b85651;
-    color: #8f9a52;
-    color: #c18f41;
-    color: #68948a;
-    color: #ab6c7d;
-    color: #72966c;
-    color: #a89984;
-    color: #5a524c;
-    color: #b85651;
-    color: #a9b665;
-    color: #d8a657;
-    color: #87aca3;
-    color: #c8899a;
-    color: #89b482;
-    color: #ddc7a1;
 }

@@ -1,11 +1,11 @@
 {
-  "name": "test",
+  "name": "Orpheus",
   "backgroundColor": "#101010",
   "outline": "#4C4C50",
-  "textMain": "#FDFDFD",
+  "textMain": "#ffffff",
   "textSubdued": "#9E9E9E",
 
-  "black": "#313131",
+  "black": "#3c3836",
   "red": "#b85651",
   "green": "#8f9a52",
   "yellow": "#c18f41",
@@ -21,5 +21,5 @@
   "lightBlue": "#87aca3",
   "lightMagenta": "#c8899a",
   "lightCyan": "#89b482",
-  "white": "#C0CAF5"
+  "white": "#ddc7a1"
 }
