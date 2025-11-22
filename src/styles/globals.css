@@ -151,6 +151,7 @@ main {
     border: 1px solid var(--outline);
     h1 {
         font: var(--h1-serif);
+        line-height: 1.2;
     }
     h2 {
         font: var(--h2);
