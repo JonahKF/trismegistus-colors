@@ -78,9 +78,9 @@ export default function Terminal() {
             <i className="nf nf-dev-nodejs_small"></i> v22.20.0
           </span>
         </span>
-        <span>
-          <span className="green">❯</span>
-          <span className="cursor"> |</span>
+
+        <span className="input-prompt-wrapper">
+          <span className="green input-prompt">❯</span>
         </span>
       </div>
     </div>
