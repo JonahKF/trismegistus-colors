@@ -19,6 +19,7 @@ function App() {
   const applyTheme = (themeData) => {
     const root = document.querySelector(":root");
 
+    root.style.setProperty("--background-outline", themeData.backgroundOutline);
     root.style.setProperty("--background-color", themeData.backgroundColor);
     root.style.setProperty("--outline", themeData.outline);
     root.style.setProperty("--text-color", themeData.textMain);

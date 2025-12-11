@@ -1,5 +1,6 @@
 {
   "name": "Trismegistus-Papyrus",
+  "backgroundOutline": "#202020",
   "backgroundColor": "#e6ddd3",
   "outline": "#4f524f",
   "textMain": "#262626",
@@ -11,7 +12,7 @@
   "yellow": "#D8A658",
   "blue": "#76B7D7",
   "magenta": "#987CDC",
-  "cyan": "#AEE8F4",
+  "cyan": "#65AE9E",
   "gray": "#C7C7C7",
 
   "lightBlack": "#5a524c",
@@ -20,6 +21,6 @@
   "lightYellow": "#deae63",
   "lightBlue": "#8dcae8",
   "lightMagenta": "#a88ee7",
-  "lightCyan": "#baedf7",
+  "lightCyan": "#89C6B6",
   "white": "#E1E1E1"
 }

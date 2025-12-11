@@ -1,5 +1,6 @@
 {
   "name": "Trismegistus-Onyx",
+  "backgroundOutline": "#000",
   "backgroundColor": "#101010",
   "outline": "#4C4C50",
   "textMain": "#FDFDFD",
