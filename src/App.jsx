@@ -6,6 +6,7 @@ import papyrus from "../data/trismegistus-papyrus.json";
 
 import Partition from "./components/Partition.jsx";
 import Terminal from "./components/Terminal.jsx";
+import Editor from "./components/Editor.jsx";
 
 const themes = {
   onyx,
@@ -66,8 +67,9 @@ function App() {
           {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
         </div>
 
-        <Terminal />
-        {/* Mock terminal, IDE, etc., with arrows on side of screen to cycle */}
+        {/* <Terminal />*/}
+
+        <Editor />
 
         <div className="theme-btn-container">
           <button
