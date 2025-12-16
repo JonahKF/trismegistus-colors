@@ -386,22 +386,18 @@ main {
 
     .white {
         color: var(--text-color);
-        font-weight: bold;
     }
 
     .green {
         color: var(--green);
-        font-weight: bold;
     }
 
     .yellow {
         color: var(--yellow);
-        font-weight: bold;
     }
 
     .red {
         color: var(--red);
-        font-weight: bold;
     }
 
     .light-red {
@@ -411,12 +407,10 @@ main {
 
     .magenta {
         color: var(--magenta);
-        font-weight: bold;
     }
 
     .blue {
         color: var(--blue);
-        font-weight: bold;
     }
 
     .light-blue {
@@ -426,12 +420,9 @@ main {
 
     .cyan {
         color: var(--cyan);
-        font-weight: bold;
     }
 
     > .left-menu {
-        border: 1px solid pink;
-
         display: flex;
         flex-direction: column;
 
@@ -461,25 +452,42 @@ main {
     > .body {
         display: flex;
         flex-direction: column;
+        width: 100%;
         overflow: hidden;
 
         > .tabs {
-            border: 1px solid purple;
-
             display: flex;
             flex-direction: row;
             gap: 15px;
+            width: 100%;
+
+            > .tab-icons {
+                margin-left: auto;
+                display: flex;
+                gap: 10px;
+                align-self: center;
+
+                font-size: clamp(0.65em, 0.7vw, 0.8em);
+            }
         }
 
         > .code {
-            border: 1px solid gold;
-
             margin-top: 4px;
             /*max-height: 250px;*/
             overflow: hidden;
 
             > .code-top {
                 margin-bottom: 4px;
+                display: flex;
+
+                > .code-top-icons {
+                    margin-left: auto;
+                    display: flex;
+                    gap: 10px;
+                    align-self: center;
+
+                    font-size: clamp(0.65em, 0.7vw, 0.8em);
+                }
             }
 
             > .code-body {
@@ -489,8 +497,6 @@ main {
         }
 
         > .editor-terminal {
-            border: 1px solid blue;
-
             padding-bottom: 30px;
             white-space: wrap;
             margin-top: auto;
@@ -498,8 +504,6 @@ main {
     }
 
     > .bottom-right-icons {
-        border: 1px solid green;
-
         position: absolute;
         bottom: 1rem;
         right: 1rem;

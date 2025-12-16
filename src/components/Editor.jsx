@@ -51,6 +51,12 @@ export default function Editor() {
 
       <div className="body">
         <div className="tabs">
+          <div className="arrows">
+            <i className="nf nf-cod-arrow_left white"></i>
+            &nbsp;
+            <i className="nf nf-cod-arrow_right gray"></i>
+            &nbsp;
+          </div>
           <div className="gray">
             <i className="nf nf-seti-json"></i> data.json
           </div>
@@ -61,7 +67,11 @@ export default function Editor() {
             <i className="nf nf-fa-react"></i> Terminal.jsx
           </div>
 
-          <div className="tab-icons"></div>
+          <div className="tab-icons">
+            <i className="nf nf-oct-plus"></i>
+            <i className="nf nf-cod-split_horizontal"></i>
+            <i className="nf nf-md-arrow_expand"></i>
+          </div>
         </div>
 
         <div className="code">
@@ -71,6 +81,13 @@ export default function Editor() {
               <span className="light-red">function</span>{" "}
               <span className="light-blue">Editor</span>
               <span className="white">()</span>
+            </span>
+
+            <span className="code-top-icons white">
+              <i className="nf nf-oct-search"></i>
+              <i className="nf nf-md-star_four_points_outline"></i>
+              <i className="nf nf-md-cursor_text"></i>
+              <i className="nf nf-seti-settings"></i>
             </span>
           </div>
 
@@ -82,22 +99,123 @@ export default function Editor() {
               <span className="white">()</span>{" "}
               <span className="white">&#123;</span>
             </div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
-            <div>13</div>
-            <div>14</div>
-            <div>15</div>
-            <div>16</div>
-            <div>17</div>
+            <div>
+              2 &nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="light-red">return</span>{" "}
+              <span className="white">(</span>
+            </div>
+            <div>
+              3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">div</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"ide-preview container"</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">div</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"left-menu"</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">div</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"yellow"</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              6
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">span</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              7
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">i</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"nf nf-md-folder_arrow_up"</span>
+              <span className="white">&#62;</span>
+              <span className="white">&#60;/</span>
+              <span className="blue">i</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              8
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white"> trismegistus-colors</span>
+            </div>
+            <div>
+              9
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;/</span>
+              <span className="blue">span</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;/</span>
+              <span className="blue">div</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">div</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"gray indent-1"</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              12
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">span</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              13
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;</span>
+              <span className="blue">i</span>{" "}
+              <span className="red">className</span>
+              <span className="white">=</span>
+              <span className="yellow">"nf nf-fa-folder"</span>
+              <span className="white">&#62;</span>
+              <span className="white">&#60;/</span>
+              <span className="blue">i</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              14
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white"> data</span>
+            </div>
+            <div>
+              15
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;/</span>
+              <span className="blue">span</span>
+              <span className="white">&#62;</span>
+            </div>
+            <div>
+              16 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              <span className="white">&#60;/</span>
+              <span className="blue">div</span>
+              <span className="white">&#62;</span>
+            </div>
           </div>
         </div>
 
