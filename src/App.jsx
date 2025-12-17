@@ -85,23 +85,28 @@ function App() {
           {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
         </div>
 
-        {previews[currentPreview].component}
-
-        <div className="gallery-controls">
+        <div className="preview-container">
           <button
             onClick={handlePreviewPrev}
             disabled={currentPreview === 0}
-            style={{ opacity: currentPreview === 0 ? 0.5 : 1 }}
+            style={{
+              opacity: currentPreview === 0 ? 0.5 : 1,
+              cursor: currentPreview === 0 ? "default" : "pointer",
+            }}
             className="scroll-btn prev"
           >
             &lt;
           </button>
+
+          {previews[currentPreview].component}
 
           <button
             onClick={handlePreviewNext}
             disabled={currentPreview === previews.length - 1}
             style={{
               opacity: currentPreview === previews.length - 1 ? 0.5 : 1,
+              cursor:
+                currentPreview === previews.length - 1 ? "default" : "pointer",
             }}
             className="scroll-btn next"
           >
