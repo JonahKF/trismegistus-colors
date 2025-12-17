@@ -14,14 +14,17 @@ export default function Editor() {
         <div className="yellow indent-1">
           <i className="nf nf-md-folder_arrow_up"></i> src
         </div>
-        <div className="yellow indent-2">
+        <div className="gray indent-2">
           <i className="nf nf-fa-folder"></i> components
         </div>
-        <div className="highlighted yellow indent-3">
+        <div className="gray indent-3">
           <i className="nf nf-fa-react"></i> Editor.jsx
         </div>
         <div className="gray indent-3">
           <i className="nf nf-fa-react"></i> Terminal.jsx
+        </div>
+        <div className="highlighted yellow indent-2">
+          <i className="nf nf-fa-react"></i> App.jsx
         </div>
 
         <div className="bottom-left-icons">
@@ -58,13 +61,22 @@ export default function Editor() {
             &nbsp;
           </div>
           <div className="gray">
-            <i className="nf nf-seti-json"></i> data.json
+            <span className="magenta">
+              <i className="nf nf-seti-json"></i>
+            </span>{" "}
+            data.json
           </div>
           <div className="white">
-            <i className="nf nf-fa-react"></i> Editor.jsx
+            <span className="yellow">
+              <i className="nf nf-fa-react"></i>
+            </span>{" "}
+            App.jsx
           </div>
           <div className="gray">
-            <i className="nf nf-fa-react"></i> Terminal.jsx
+            <span className="yellow">
+              <i className="nf nf-fa-react"></i>
+            </span>{" "}
+            Terminal.jsx
           </div>
 
           <div className="tab-icons">
@@ -77,9 +89,8 @@ export default function Editor() {
         <div className="code">
           <div className="code-top gray">
             <span>
-              src/components/Editor.jsx &gt;{" "}
-              <span className="light-red">function</span>{" "}
-              <span className="light-blue">Editor</span>
+              src/App.jsx &gt; <span className="light-red">function</span>{" "}
+              <span className="light-blue">App</span>
               <span className="white">()</span>
             </span>
 
@@ -93,129 +104,152 @@ export default function Editor() {
 
           <div className="code-body text-subdued-bg">
             <div>
-              1 &nbsp;&nbsp;{" "}
-              <span className="light-red">export default function</span>{" "}
-              <span className="light-blue">Editor</span>
-              <span className="white">()</span>{" "}
+              1 &nbsp;&nbsp; <span className="light-red">import</span>{" "}
+              <span className="white"> &#123; useState, useEffect &#125; </span>
+              <span className="light-red">from</span>{" "}
+              <span className="yellow">"react"</span>
+              <span className="white">;</span>
+            </div>
+            <div>2</div>
+            <div>
+              3 &nbsp;&nbsp; <span className="light-red">const</span>{" "}
+              <span className="white">themes </span>
+              <span className="light-blue">= </span>
               <span className="white">&#123;</span>
             </div>
             <div>
-              2 &nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="light-red">return</span>{" "}
+              4 &nbsp;&nbsp;&nbsp;<span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="green">onyx</span>
+              <span className="white">,</span>{" "}
+            </div>
+            <div>
+              5 &nbsp;&nbsp;&nbsp;<span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="green">slate</span>
+              <span className="white">,</span>{" "}
+            </div>
+            <div>
+              6 &nbsp;&nbsp;&nbsp;<span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="green">papyrus</span>
+              <span className="white">,</span>{" "}
+            </div>
+            <div>
+              7 &nbsp;&nbsp;&nbsp;
+              <span className="white">&#125;</span>
+            </div>
+            <div>8</div>
+            <div>
+              9 &nbsp;&nbsp; <span className="light-red">const</span>{" "}
+              <span className="white">previews </span>
+              <span className="light-blue">= </span>
+              <span className="white">[</span>
+            </div>
+            <div>
+              10 &nbsp;&nbsp;<span className="vert-line"></span>&nbsp;&nbsp;
+              <span className="white">&#123;</span>{" "}
+              <span className="green">id</span>
+              <span className="white">:</span>{" "}
+              <span className="yellow">"terminal"</span>
+              <span className="white">,</span>{" "}
+              <span className="green">component</span>
+              <span className="white">:</span>{" "}
+              <span className="white">&#60;</span>
+              <span className="light-blue">Terminal</span>{" "}
+              <span className="white">/&#62;,</span>{" "}
+              <span className="green">label</span>
+              <span className="white">:</span>{" "}
+              <span className="yellow">"Terminal"</span>{" "}
+              <span className="white">&#125;,</span>
+            </div>
+            <div>
+              11 &nbsp;&nbsp;<span className="vert-line"></span>&nbsp;&nbsp;
+              <span className="white">&#123;</span>{" "}
+              <span className="green">id</span>
+              <span className="white">:</span>{" "}
+              <span className="yellow">"editor"</span>
+              <span className="white">,</span>{" "}
+              <span className="green">component</span>
+              <span className="white">:</span>{" "}
+              <span className="white">&#60;</span>
+              <span className="light-blue">Editor</span>{" "}
+              <span className="white">/&#62;,</span>{" "}
+              <span className="green">label</span>
+              <span className="white">:</span>{" "}
+              <span className="yellow">"Editor"</span>{" "}
+              <span className="white">&#125;,</span>
+            </div>
+            <div>
+              12 &nbsp;&nbsp;
+              <span className="white">]</span>
+            </div>
+            <div>13</div>
+            <div>
+              14 &nbsp;&nbsp;
+              <span className="light-red">function</span>{" "}
+              <span className="light-blue">App</span>
+              <span className="white">() &#123;</span>
+            </div>
+            <div>
+              15 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="light-red">const</span>{" "}
+              <span className="white">[currentTheme, setCurrentTheme]</span>{" "}
+              <span className="light-blue">= </span>{" "}
+              <span className="green">useState</span>
               <span className="white">(</span>
+              <span className="yellow">"onyx"</span>
+              <span className="white">);</span>
             </div>
             <div>
-              3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">div</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"ide-preview container"</span>
-              <span className="white">&#62;</span>
+              16 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="light-red">const</span>{" "}
+              <span className="white">[currentPreview, setCurrentPreview]</span>{" "}
+              <span className="light-blue">= </span>{" "}
+              <span className="green">useState</span>
+              <span className="white">(</span>
+              <span className="magenta">0</span>
+              <span className="white">);</span>
             </div>
             <div>
-              4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">div</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"left-menu"</span>
-              <span className="white">&#62;</span>
+              17 &nbsp;&nbsp;
+              <span className="vert-line"></span>
             </div>
             <div>
-              5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">div</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"yellow"</span>
-              <span className="white">&#62;</span>
+              18 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="light-red">const</span>{" "}
+              <span className="green">applyTheme</span>{" "}
+              <span className="light-blue">=</span>{" "}
+              <span className="white">(themeData)</span>{" "}
+              <span className="light-blue">=&#62;</span>{" "}
+              <span className="white">&#123;</span>
             </div>
             <div>
-              6
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">span</span>
-              <span className="white">&#62;</span>
+              19 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
             </div>
             <div>
-              7
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">i</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"nf nf-md-folder_arrow_up"</span>
-              <span className="white">&#62;</span>
-              <span className="white">&#60;/</span>
-              <span className="blue">i</span>
-              <span className="white">&#62;</span>
+              20 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
             </div>
-            <div>
-              8
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white"> trismegistus-colors</span>
-            </div>
-            <div>
-              9
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;/</span>
-              <span className="blue">span</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;/</span>
-              <span className="blue">div</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">div</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"gray indent-1"</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              12
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">span</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              13
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;</span>
-              <span className="blue">i</span>{" "}
-              <span className="red">className</span>
-              <span className="white">=</span>
-              <span className="yellow">"nf nf-fa-folder"</span>
-              <span className="white">&#62;</span>
-              <span className="white">&#60;/</span>
-              <span className="blue">i</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              14
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white"> data</span>
-            </div>
-            <div>
-              15
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;/</span>
-              <span className="blue">span</span>
-              <span className="white">&#62;</span>
-            </div>
-            <div>
-              16 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              <span className="white">&#60;/</span>
-              <span className="blue">div</span>
-              <span className="white">&#62;</span>
-            </div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
           </div>
         </div>
 
