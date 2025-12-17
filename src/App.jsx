@@ -14,8 +14,14 @@ const themes = {
   papyrus,
 };
 
+const previews = [
+  { id: "terminal", component: <Terminal />, label: "Terminal" },
+  { id: "editor", component: <Editor />, label: "Editor" },
+];
+
 function App() {
   const [currentTheme, setCurrentTheme] = useState("onyx");
+  const [currentPreview, setCurrentPreview] = useState(0);
 
   const applyTheme = (themeData) => {
     const root = document.querySelector(":root");
@@ -56,6 +62,18 @@ function App() {
     setCurrentTheme(themeName);
   };
 
+  const handlePreviewNext = () => {
+    if (currentPreview < previews.length - 1) {
+      setCurrentPreview(currentPreview + 1);
+    }
+  };
+
+  const handlePreviewPrev = () => {
+    if (currentPreview > 0) {
+      setCurrentPreview(currentPreview - 1);
+    }
+  };
+
   return (
     <>
       <main>
@@ -67,9 +85,29 @@ function App() {
           {/* Add click functionality to each shape, allowing click-to-copy hexcode of color */}
         </div>
 
-        {/* <Terminal />*/}
+        {previews[currentPreview].component}
 
-        <Editor />
+        <div className="gallery-controls">
+          <button
+            onClick={handlePreviewPrev}
+            disabled={currentPreview === 0}
+            style={{ opacity: currentPreview === 0 ? 0.5 : 1 }}
+            className="scroll-btn prev"
+          >
+            &lt;
+          </button>
+
+          <button
+            onClick={handlePreviewNext}
+            disabled={currentPreview === previews.length - 1}
+            style={{
+              opacity: currentPreview === previews.length - 1 ? 0.5 : 1,
+            }}
+            className="scroll-btn next"
+          >
+            &gt;
+          </button>
+        </div>
 
         <div className="theme-btn-container">
           <button
