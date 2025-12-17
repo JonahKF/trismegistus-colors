@@ -103,6 +103,7 @@ h6 {
     /* Default colors, replaced by JSON */
     --background-outline: #000;
     --background-color: #101010;
+    --background-subdued: #202020;
     --outline: #4c4c50;
     --text-color: #ffffff;
     --text-subdued: #9e9e9e;
@@ -145,10 +146,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     gap: 2.2rem;
-    min-height: 83vh;
+    min-height: auto;
     max-height: 95vh;
     width: 83vw;
     background-color: var(--background-color);
@@ -210,11 +211,15 @@ main {
 }
 
 .scroll-btn {
-    background-color: var(--bg);
+    background-color: var(--background-color);
     color: var(--text-color);
     border-radius: 0.5rem;
     border: 1px solid var(--outline);
     padding: 0.5rem 1rem;
+
+    &:hover {
+        background-color: var(--background-subdued);
+    }
 }
 
 .terminal {
@@ -476,7 +481,7 @@ main {
             display: inline-flex;
             align-items: center;
             flex-direction: row;
-            gap: 15px;
+            gap: 25px;
             width: 100%;
 
             > .tab-icons {
@@ -512,6 +517,12 @@ main {
                 .vert-line {
                     border-left: 1px solid var(--text-subdued-bg);
                 }
+
+                .error {
+                    text-decoration-line: underline;
+                    text-decoration-style: wavy;
+                    text-decoration-color: var(--red);
+                }
             }
         }
 
@@ -543,6 +554,7 @@ main {
         font-size: 0.9em;
         font-weight: 600;
         cursor: pointer;
+        min-width: 163px;
         &.onyx {
             background-color: #101010;
             border: 1px solid #4c4c50;
@@ -559,4 +571,61 @@ main {
             color: #262626;
         }
     }
+}
+
+.download-btn {
+    position: absolute;
+    bottom: 2.2rem;
+    right: 2.2rem;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    border: 1px solid var(--outline);
+    padding: 4px 1.5rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--background-subdued);
+    }
+}
+
+.download-list {
+    position: absolute;
+    right: 2.2rem;
+    bottom: calc(2.2rem + 34px + 2.1rem);
+
+    width: 4rem;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1.2rem;
+
+    .dl-icon {
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        width: 100%;
+
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border: 1px solid var(--outline);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        > :nth-child(1) {
+            height: 50%;
+            fill: var(--text-color);
+        }
+    }
+}
+
+.hidden {
+    /*display: none;*/
 }

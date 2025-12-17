@@ -208,7 +208,9 @@ export default function Editor() {
               <span className="vert-line"></span>
               &nbsp;&nbsp;
               <span className="light-red">const</span>{" "}
-              <span className="white">[currentPreview, setCurrentPreview]</span>{" "}
+              <span className="white">[currentPreview,</span>{" "}
+              <span className="gray error">setCurrentPrevie</span>
+              <span className="white">]</span>{" "}
               <span className="light-blue">= </span>{" "}
               <span className="green">useState</span>
               <span className="white">(</span>
@@ -234,9 +236,21 @@ export default function Editor() {
               19 &nbsp;&nbsp;
               <span className="vert-line"></span>
               &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
+              <span className="light-red">const</span>{" "}
+              <span className="white">root</span>{" "}
+              <span className="light-blue">= </span>{" "}
+              <span className="white">document.</span>
+              <span className="green">querySelector</span>
+              <span className="white">(</span>
+              <span className="yellow">":root"</span>
+              <span className="white">);</span>
             </div>
             <div>
               20 &nbsp;&nbsp;
+              <span className="vert-line"></span>
+              &nbsp;&nbsp;
               <span className="vert-line"></span>
               &nbsp;&nbsp;
             </div>
