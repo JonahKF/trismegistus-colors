@@ -604,6 +604,10 @@ main {
     justify-content: end;
     gap: 1.2rem;
 
+    &.hidden {
+        display: none;
+    }
+
     .dl-icon {
         border-radius: 50%;
         aspect-ratio: 1/1;
@@ -619,13 +623,13 @@ main {
 
         cursor: pointer;
 
+        &:hover {
+            background-color: var(--background-subdued);
+        }
+
         > :nth-child(1) {
             height: 50%;
             fill: var(--text-color);
         }
     }
-}
-
-.hidden {
-    /*display: none;*/
 }
